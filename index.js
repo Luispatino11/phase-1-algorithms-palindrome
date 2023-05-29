@@ -1,6 +1,15 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  
+  string = string.replace(/ /g, "").toLowerCase();
+  
+  
+  if (string === string.split("").reverse().join("")) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
 
 /* 
   Add your pseudocode here
